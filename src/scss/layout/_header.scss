@@ -34,6 +34,7 @@
             transition: 300ms ease;
             opacity: 0;
             visibility: hidden;
+            z-index: 99999;
         }
         @include media(768){
             width: 100%;
