@@ -7,14 +7,14 @@ mixin lamps()
                 li.lamps__li #[span 03] Полная экологичность
                 li.lamps__li #[span 04] Сделано в Грузии
             .lamps__row
-                .lamps__item 
+                .lamps__item.first
                     .lamps__left 
                         .lamps__left-img 
                             img(src="@img/lamps-img-1.png", alt="")
                         .lamps__content
                             h2.lamps__title Подвесные светильники
                             p.lamps__p Classic style of LED lighting
-                    .lamps__right 
+                    .lamps__right.first.active
                         .lamps__right-img 
                             img(src="@img/lamps-img-2.png", alt="")
                         .lamps__right-content
@@ -31,14 +31,8 @@ mixin lamps()
                                     <circle cx="14" cy="14" r="14" fill="black"/>
                                     <path d="M12 9V9C12.9173 11.1153 14.6057 12.8019 16.722 13.717L17.2353 13.939L16.722 14.1609C14.6057 15.076 12.9173 16.7626 12 18.8779V18.8779" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                .lamps__item 
-                    .lamps__left 
-                        .lamps__left-img 
-                            img(src="@img/lamps-img-3.png", alt="")
-                            .lamps__content
-                                h2.lamps__title Настенные светильники
-                                p.lamps__p Аrchitecture of spaces illuminated 
-                    .lamps__right 
+                .lamps__item.second.hidden
+                    .lamps__right.second
                         .lamps__right-img 
                             img(src="@img/lamps-img-4.png", alt="")
                             .lamps__right-content
@@ -54,4 +48,10 @@ mixin lamps()
                                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="14" cy="14" r="14" fill="black"/>
                                         <path d="M12 9V9C12.9173 11.1153 14.6057 12.8019 16.722 13.717L17.2353 13.939L16.722 14.1609C14.6057 15.076 12.9173 16.7626 12 18.8779V18.8779" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>  
+                                    </svg>
+                    .lamps__left 
+                        .lamps__left-img 
+                            img(src="@img/lamps-img-3.png", alt="")
+                            .lamps__content
+                                h2.lamps__title Настенные светильники
+                                p.lamps__p Аrchitecture of spaces illuminated   

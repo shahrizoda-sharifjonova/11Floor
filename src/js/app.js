@@ -25,3 +25,4 @@ menu.addEventListener('click', (e)=>{
     body.classList.toggle('hidden')
     menu.classList.toggle('active')
 })
+

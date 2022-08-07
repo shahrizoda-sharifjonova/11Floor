@@ -9,6 +9,10 @@
     @include media(575){
         height: calc(100vh - 46px);
     }
+    @include media(425){
+        max-height: calc(100vh - 46px);
+        height: max-content;
+    }
     &__body{
         height: 100%;
         &.container{
@@ -35,6 +39,7 @@
         }
         &-slide{
             width: 100%;
+            height: 100%;
             position: relative;
             .intro__img{
                 width: 100%;

@@ -1,21 +1,45 @@
 .lamps{
     padding-top: 80px;
     padding-bottom: 115px;
+    @include media(1200){
+        padding-top: 55px;
+        padding-bottom: 100px;
+    }
+    @include media(768){
+        padding-top: 35px;
+        padding-bottom: 70px;
+    }
     &__body{
         padding-right: 153px;
         padding-left: 153px;
+        position: relative;
+        @include media(1400){
+            padding-right: 15px;
+            padding-left: 15px;
+        }
     }
     &__list{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         column-gap: 21px;
         margin-bottom: 100px;
+        @include media(1200){
+            column-gap: 16px;
+        }
+        @include media(992){
+            flex-wrap: wrap;
+            column-gap: 22px;
+            row-gap: 16px;
+        }
+        @include media(768){
+            margin-bottom: 78px;
+        }
     }
     &__li{
         padding-bottom: 15px;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         column-gap: 17px;
         font-weight: 500;
         font-size: 18px;
@@ -23,6 +47,19 @@
         color: #000000;
         border-bottom: 1px solid #000000;
         width: calc(25% - 15.73px);
+        @include media(1200){
+            column-gap: 5px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            width: calc(25% - 10px);
+        }
+        @include media(992){
+            width: calc(50% - 11px);
+            column-gap: 3px;
+            font-size: 12px;
+            line-height: 17px;
+        }
         span{
             color: rgba(0, 0, 0, 0.2);
         }
@@ -30,20 +67,57 @@
     &__row{
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;   
+        align-items: flex-start;  
+        column-gap: 20px; 
+        @include media(768){
+            flex-direction: column;
+            row-gap: 12px;
+        }
     }
     &__item{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         column-gap: 95px;
+        transition: 150ms ease;
+        width: calc(50% - 14px);
+        @include media(768){
+            width: 100%;
+            column-gap: 0;
+        }
+        &:hover{
+            .lamps__right{
+                opacity: 1;
+                visibility: visible;
+                background: #F5F2F5;
+                @include media(1500){
+                    opacity: 0;
+                    display: none !important;
+                }
+            }
+        }
     }
     &__left{
         position: relative;
+        &-img{
+            width: 100%;
+            line-height: 0;
+            img{
+                width: 100%;
+                line-height: 0;
+            }
+        }
         .lamps__content{
             position: absolute;
             bottom: 30px;
             left: 47px;
+            @include media(1200){
+                bottom: 23px;
+                left: 35px;
+            }
+            @include media(768){
+                left: 23px;
+            }
         }
     }
     &__title{
@@ -54,6 +128,17 @@
         line-height: 107.3%;
         color: #FFFFFF;
         margin-bottom: 15px;
+        @include media(1200){
+            font-weight: 400;
+            font-size: 35.9049px;
+            line-height: 107.3%;
+            margin-bottom: 10px;
+        }
+        @include media(768){
+            font-weight: 400;
+            font-size: 23.7324px;
+            line-height: 107.3%;
+        }
         span{
             font-family: PlayfairDisplay;
             font-style: normal;
@@ -72,11 +157,30 @@
         font-size: 18px;
         line-height: 37px;
         color: #FFFFFF;
+        @include media(1200){
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 28px;
+        }
         &.black{
             color: #000;
         }
     }
     &__right{
+        position: absolute;
+        z-index: 99;
+        opacity: 0;
+        visibility: hidden;
+        transition: 150ms ease;
+        @include media(1500){
+            display: none !important;
+        }
+        &.first{
+            right: 153px;
+        }
+        &.second{
+            left: 153px;
+        }
         &-content{
             padding-left: 32px;
         }
