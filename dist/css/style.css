@@ -667,6 +667,219 @@
   color: #FFFFFF;
 }
 
+.lamps {
+  padding-top: 80px;
+  padding-bottom: 115px;
+}
+
+.lamps__body {
+  padding-right: 153px;
+  padding-left: 153px;
+}
+
+.lamps__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 21px;
+     -moz-column-gap: 21px;
+          column-gap: 21px;
+  margin-bottom: 100px;
+}
+
+.lamps__li {
+  padding-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 17px;
+     -moz-column-gap: 17px;
+          column-gap: 17px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  width: calc(25% - 15.73px);
+}
+
+.lamps__li span {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.lamps__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.lamps__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 95px;
+     -moz-column-gap: 95px;
+          column-gap: 95px;
+}
+
+.lamps__left {
+  position: relative;
+}
+
+.lamps__left .lamps__content {
+  position: absolute;
+  bottom: 30px;
+  left: 47px;
+}
+
+.lamps__title {
+  font-family: PlayfairDisplay;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48.2px;
+  line-height: 107.3%;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.lamps__title span {
+  font-family: PlayfairDisplay;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48.2px;
+  line-height: 107.3%;
+  color: #FFFFFF;
+}
+
+.lamps__title.black {
+  color: #000;
+}
+
+.lamps__p {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 37px;
+  color: #FFFFFF;
+}
+
+.lamps__p.black {
+  color: #000;
+}
+
+.lamps__right-content {
+  padding-left: 32px;
+}
+
+.lamps__texts {
+  -webkit-transform: translateY(-56px);
+      -ms-transform: translateY(-56px);
+          transform: translateY(-56px);
+  max-width: 335px;
+  width: 100%;
+}
+
+.lamps__desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(0, 0, 0, 0.7);
+  max-width: 437px;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.lamps__infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.22);
+  margin-bottom: 45px;
+}
+
+.lamps__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-column-gap: 5px;
+     -moz-column-gap: 5px;
+          column-gap: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.lamps__info span {
+  font-family: PlayfairDisplay;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 107.3%;
+  color: #000000;
+}
+
+.lamps__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+  -webkit-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.lamps__btn:hover {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.lamps__btn:active {
+  text-decoration: none;
+  font-weight: 500;
+}
+
 * {
   margin: 0;
   padding: 0;
