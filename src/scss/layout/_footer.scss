@@ -24,7 +24,11 @@
     }
     &__body{ 
         padding-right: 155px;
-        padding-left: 155px;  
+        padding-left: 155px; 
+        @include media(1400){
+            padding-right: 15px;
+            padding-left: 15px;
+        } 
     }
     &__logo{
         @include media(575){
@@ -196,15 +200,17 @@
         }
     }
     &__li{
-        font-family: Montserrat;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 120%;
-        text-align: center;
-        color: #555;
-        opacity: 0.6;
-        @include media(575){
-            font-size: 12px;
+        a{
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 120%;
+            text-align: center;
+            color: #555;
+            opacity: 0.6;
+            @include media(575){
+                font-size: 12px;
+            }
         }
         &.sm{
             font-family: CeraProMedium;

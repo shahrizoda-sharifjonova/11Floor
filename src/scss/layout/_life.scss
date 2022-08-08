@@ -1,0 +1,161 @@
+.life{
+    padding-bottom: 158px;
+    @include media(992){
+        padding-bottom: 100px;
+    }
+    @include media(575){
+        padding-bottom: 70px;
+    }
+    &__title{
+        font-family: 'PlayfairDisplay';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64.1509px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 44px;
+        @include media(992){
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 64px;
+            margin-bottom: 30px;    
+        }
+        @include media(575){
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 11px;
+        }
+    }
+    &__desc{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: rgba(2, 2, 2, 0.7);
+        max-width: 841px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 57px;
+        @include media(575){
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 25px;
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 20px;
+        @include media(1600){
+            flex-direction: column;
+            align-items: center;
+        }
+        @include media(575){
+            flex-direction: column;
+            row-gap: 7px;
+        }
+        &.hidden-sm{
+            @include media(575){
+                display: none;
+            }
+        }
+        &.visible-sm{
+            display: none;
+            @include media(575){
+                display: flex;
+            }
+        }
+    }
+    &__left{
+        display: flex;
+        align-items: stretch;
+        gap: 20px;
+        @include media(575){
+            gap: 10px;
+        }
+    }
+    &__right{
+        display: flex; 
+        align-items: stretch;
+        gap: 20px;
+        @include media(575){
+            gap: 10px;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        &-content{
+            @include media(575){
+                display: flex;
+                align-items: stretch;
+            }
+        }
+    }
+    &__column{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &.row{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 10px;
+            @include media(575){
+                flex-direction: row;
+            }
+        }
+    }
+    &__wrapper{
+        &.enable-sm{
+            @include media(575){
+                display: flex !important;
+                flex-direction: column;
+                row-gap: 7px;
+            }
+        }
+    }
+    &__img{
+        line-height: 0 !important;
+        border-radius: 10px;
+        @include media(960){
+            border-radius: 0;
+        }
+        img{
+            line-height: 0;
+            border-radius: 10px;
+            width: 100%;
+            @include media(960){
+                border-radius: 0;
+            }
+            &.disable-1600{
+                display: block !important;
+                @include media(1600){
+                    display: none !important;
+                }
+            }
+            &.enable-1600{ 
+                display: none !important;
+                @include media(1600){
+                    display: block !important;
+                }
+            }
+        }
+    }
+    &__row{
+        display: flex;
+        justify-content: center;
+        column-gap: 7px;
+        flex-direction: row;
+        &:nth-of-type(3){
+            column-gap: 12px;
+        }
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        row-gap: 7px;
+    }
+}
