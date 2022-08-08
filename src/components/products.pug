@@ -1,0 +1,32 @@
+mixin products()
+    .products 
+        .products__body.container 
+            .products__left 
+                h2.products__title Преимущества нашей продукции
+                .products__content 
+                    .products__item(data-target="1")     
+                        .products__icon 
+                            img(src="@img/products-icon-1.svg", alt="")
+                        p.products__subtitle Дизайн
+                        p.products__desc Уникальный и классический одновременно
+                    .products__item(data-target="2")       
+                        .products__icon 
+                            img(src="@img/products-icon-2.svg", alt="")
+                        p.products__subtitle Экология
+                        p.products__desc Экологически дружественное производство: от выбора материалов до утилизации отходов
+                    .products__item(data-target="3")       
+                        .products__icon 
+                            img(src="@img/products-icon-3.svg", alt="")
+                        p.products__subtitle Изготовление
+                        p.products__desc Сочетание ручного труда и современных технологий
+                    .products__item(data-target="4")       
+                        .products__icon 
+                            img(src="@img/products-icon-4.svg", alt="")
+                        p.products__subtitle Материалы
+                        p.products__desc Только натуральные: дерево, алюминий, натуральное масло и твердый воск
+            .products__right 
+                .products__img 
+                    img(src="@img/products-img-1.png", alt="").disable-xl
+                    img(src="@img/products-img-1-xl.png", alt="").enable-xl
+                .products__img 
+                    img(src="@img/products-img-2.png", alt="")
