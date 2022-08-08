@@ -22,6 +22,10 @@
             height: 20px;
         }
     }
+    &__body{ 
+        padding-right: 155px;
+        padding-left: 155px;  
+    }
     &__logo{
         @include media(575){
             width: 160px;
