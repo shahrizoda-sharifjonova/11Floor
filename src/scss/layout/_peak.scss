@@ -1,0 +1,24 @@
+.peak{
+    padding-top: 130px;
+    padding-bottom: 130px;
+    &__slider{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .swiper{
+        max-height: 105px;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        &_second{
+            max-height: 80%;
+            height: 100%;
+        }
+        &-wrapper{
+            display: flex;
+            width: max-content;
+        } 
+
+    }
+}

@@ -32,6 +32,22 @@ new Swiper(".choice__swiper", {
   }
 });
 
+var swiper1 = new Swiper("peak__swiper", {
+  spaceBetween: 10,
+  slidesPerView: 1,
+  freeMode: true,
+});
+var swiper2 = new Swiper(".peak__swiper_second", {
+  spaceBetween: 18,
+  navigation: {
+    nextEl: ".peak__button-next",
+    prevEl: ".peak__button-prev",
+  },
+  thumbs: {
+    swiper: swiper1,
+  },
+});
+
 const menu = document.querySelector('.menu');
 const headerContent = document.querySelector('.header__content');
 const body = document.querySelector('body');
