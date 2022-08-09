@@ -2,6 +2,7 @@
     background: #EDE8E0;
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-bottom: 88px;
     @include media(1200){
         padding-bottom: 0;
         margin-bottom: 396px;
@@ -36,7 +37,6 @@
         }
     }
     &__title{
-        font-family: 'PlayfairDisplay';
         font-style: normal;
         font-weight: 400;
         font-size: 64px;
@@ -96,7 +96,6 @@
             background: rgba(255, 255, 255, 0.42);
             border: 1px solid rgba(0, 0, 0, 0.13);
             border-radius: 50%;
-            font-family: 'PlayfairDisplay';
             font-style: normal;
             font-weight: 500;
             font-size: 13px;
