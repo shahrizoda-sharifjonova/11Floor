@@ -753,10 +753,21 @@
   width: calc(50% - 14px);
 }
 
+.lamps__item:hover {
+  background: #F5F2F5;
+}
+
 .lamps__item:hover .lamps__right {
   opacity: 1;
   visibility: visible;
   background: #F5F2F5;
+}
+
+.lamps__item.second:hover {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 
 .lamps__left {
@@ -829,6 +840,7 @@
   -webkit-transition: 150ms ease;
   -o-transition: 150ms ease;
   transition: 150ms ease;
+  top: 140px;
 }
 
 .lamps__right.first {
@@ -845,6 +857,7 @@
 
 .lamps__right-img img {
   width: 100%;
+  height: 100%;
 }
 
 .lamps__texts {
@@ -1631,12 +1644,6 @@ a {
 }
 
 @media (max-width: 1500px) {
-  .lamps__row {
-    -webkit-column-gap: 40px;
-       -moz-column-gap: 40px;
-            column-gap: 40px;
-  }
-
   .lamps__right-img {
     max-width: 540px;
     width: 100%;
@@ -1793,11 +1800,6 @@ a {
             column-gap: 15px;
   }
 
-  .lamps__item:hover .lamps__right {
-    opacity: 0;
-    display: none !important;
-  }
-
   .lamps__left:hover {
     -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
@@ -1816,10 +1818,47 @@ a {
     margin-bottom: 10px;
   }
 
+  .lamps__title span {
+    font-weight: 400;
+    font-size: 35.9049px;
+    line-height: 107.3%;
+    margin-bottom: 10px;
+  }
+
   .lamps__p {
     font-weight: 500;
     font-size: 14px;
     line-height: 28px;
+  }
+
+  .lamps__right-img {
+    max-width: 466px;
+    width: 100%;
+  }
+
+  .lamps__texts {
+    -webkit-transform: translateY(-45px);
+        -ms-transform: translateY(-45px);
+            transform: translateY(-45px);
+  }
+
+  .lamps__desc {
+    margin-top: -20px;
+    margin-bottom: 25px;
+  }
+
+  .lamps__infos {
+    margin-bottom: 30px;
+  }
+
+  .lamps__info {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .lamps__info span {
+    font-size: 25px;
+    line-height: 109.3%;
   }
 
   .products {
@@ -1989,6 +2028,57 @@ a {
     line-height: 17px;
   }
 
+  .lamps__right {
+    max-width: 346px;
+    width: 100%;
+    height: 100%;
+    top: 182px;
+  }
+
+  .lamps__right-content {
+    padding-left: 10px;
+  }
+
+  .lamps__right-img {
+    max-width: 330px;
+    width: 100%;
+    height: 190px;
+  }
+
+  .lamps__desc {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: -50px;
+    margin-bottom: 15px;
+  }
+
+  .lamps__infos {
+    margin-bottom: 15px;
+  }
+
+  .lamps__info {
+    -webkit-column-gap: 3px;
+       -moz-column-gap: 3px;
+            column-gap: 3px;
+    font-size: 12px;
+  }
+
+  .lamps__info span {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .lamps__btn {
+    font-size: 16px;
+    -webkit-column-gap: 7px;
+       -moz-column-gap: 7px;
+            column-gap: 7px;
+  }
+
+  .lamps__btn svg {
+    width: 20px;
+  }
+
   .life {
     padding-bottom: 100px;
   }
@@ -2101,7 +2191,7 @@ a {
 
   .lamps {
     padding-top: 35px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
   }
 
   .lamps__list {
@@ -2113,7 +2203,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    row-gap: 12px;
+    row-gap: 20px;
   }
 
   .lamps__item {
@@ -2121,6 +2211,18 @@ a {
     -webkit-column-gap: 0;
        -moz-column-gap: 0;
             column-gap: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 12px;
+  }
+
+  .lamps__item:hover .lamps__right {
+    display: block;
   }
 
   .lamps__left .lamps__content {
@@ -2131,6 +2233,45 @@ a {
     font-weight: 400;
     font-size: 23.7324px;
     line-height: 107.3%;
+    max-width: 200px;
+  }
+
+  .lamps__title span {
+    font-weight: 400;
+    font-size: 23.7324px;
+    line-height: 107.3%;
+  }
+
+  .lamps__right {
+    max-width: 100%;
+    width: 100%;
+    position: static;
+    display: none;
+  }
+
+  .lamps__right-img {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    max-width: 100%;
+  }
+
+  .lamps__texts {
+    -webkit-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+
+  .lamps__desc {
+    margin-top: -20px;
+  }
+
+  .lamps__info {
+    font-size: 10px;
+  }
+
+  .lamps__info span {
+    font-size: 15px;
   }
 
   .products__content {
