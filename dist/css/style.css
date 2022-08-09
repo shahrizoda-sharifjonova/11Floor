@@ -761,6 +761,15 @@
 
 .lamps__left {
   position: relative;
+  -webkit-transition: 500ms ease;
+  -o-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.lamps__left:hover {
+  -webkit-transform: translateY(-25px);
+      -ms-transform: translateY(-25px);
+          transform: translateY(-25px);
 }
 
 .lamps__left-img {
