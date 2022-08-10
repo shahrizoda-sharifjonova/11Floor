@@ -1,11 +1,85 @@
 .peak{
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 140px;
+    padding-bottom: 140px;
     &__body{
-        padding-left: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        column-gap: 80px;
+        padding-left: 133px;
+        padding-right: 133px;
     }
     &__left{
         max-width: 557px;
         width: 100%;
     }
+    &__slider{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .swiper{
+        width: 100%;
+        z-index: 999999999;
+        &.mySwiper2{
+            margin-bottom: 16px;
+            z-index: 999999999;
+        }
+        &:nth-of-type(2){
+            max-width: 507px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            .swiper-wrapper{
+                margin-left: -122px;
+            }
+            .swiper-slide{
+                width: 100%;
+                z-index: 999999999;
+            }
+            img{
+                max-width: 105px;
+                width: 100%;
+                z-index: 999999999;
+            }
+        }
+        &-wrapper{
+            display: flex;
+            width: max-content;
+            align-items: stretch;    
+            overflow: hidden;
+            z-index: 999999999;
+        }
+        &-slide{
+            z-index: 999999999;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &__buttons{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        transform: translateY(-65px);
+        margin-left: -20px;
+        width: calc(100% + 32px);
+        position: relative;
+    }
+    &__button{
+        &-prev{
+            cursor: pointer;
+            z-index: 9999999999999999999999999999999999 !important;
+            position: absolute;
+            left: 0;
+        }
+        &-next{
+            cursor: pointer;
+            z-index: 9999999999999999999999999999999999 !important;
+            position: absolute;
+            right: 0;
+        }
+    }
+
 }

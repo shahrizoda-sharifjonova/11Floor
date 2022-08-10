@@ -2,9 +2,29 @@ import * as functions from "./modules/functions.js";
 
 functions.isWebp();
 
-import Swiper, {Pagination, Navigation, FreeMode } from 'swiper';
+import Swiper, {Pagination, Navigation, FreeMode, Thumbs } from 'swiper';
 
 const swiper = new Swiper();
+
+var swiper1 = new Swiper(".mySwiper", {
+  modules: [Thumbs],
+  spaceBetween: 18,
+  slidesPerView: 4,
+  loop: true,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  modules: [Navigation, Thumbs],
+  spaceBetween: 18,
+  loop: true,
+  navigation: {
+    nextEl: ".peak__button-next",
+    prevEl: ".peak__button-prev",
+  },
+  thumbs: {
+    swiper: swiper1,
+  },
+});
 
 new Swiper(".intro__swiper", {
     modules: [Pagination],
