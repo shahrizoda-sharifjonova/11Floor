@@ -2,7 +2,7 @@ import * as functions from "./modules/functions.js";
 
 functions.isWebp();
 
-import Swiper, {Pagination, FreeMode } from 'swiper';
+import Swiper, {Pagination, Navigation, FreeMode } from 'swiper';
 
 const swiper = new Swiper();
 
@@ -30,22 +30,6 @@ new Swiper(".choice__swiper", {
       slidesPerView: 2,
     }
   }
-});
-
-var swiper1 = new Swiper("peak__swiper", {
-  spaceBetween: 10,
-  slidesPerView: 1,
-  freeMode: true,
-});
-var swiper2 = new Swiper(".peak__swiper_second", {
-  spaceBetween: 18,
-  navigation: {
-    nextEl: ".peak__button-next",
-    prevEl: ".peak__button-prev",
-  },
-  thumbs: {
-    swiper: swiper1,
-  },
 });
 
 const menu = document.querySelector('.menu');
