@@ -78,10 +78,16 @@ mixin peak()
                                 img(src="@img/arrow-next.svg", alt="")
                             </div>
                     </div>
-            .peak__right 
-                p.peak__span Модель
-                h1.peak__title peak
-                p.peak__p Коллекция Asce II 
+            .peak__right
+                .peak__top 
+                    .peak__top-left
+                        p.peak__span Модель
+                        h1.peak__title.disable-lg peak
+                        h1.peak__title.enable-lg pic
+                        p.peak__p Коллекция Asce II 
+                    .peak__top-right.enable-lg 
+                        p.peak__price 1000 #[span $]
+                        span.peak__p Цена
                 .peak__row 
                     .peak__row-left 
                         p.peak__subtitle Цвет
@@ -103,10 +109,10 @@ mixin peak()
                             button(type="submit").peak__btn 800 м
                 p.peak__subtitle.list__subtitle Technical Details
                 .peak__list 
-                    li.peak__li Размер ............................................................................................ #[span 822w x 82h]
-                    li.peak__li Напряжение питания .......................................................... #[span 110V - 240V]
-                    li.peak__li CRI ........................................................................................................................... #[span 90]
-                    li.peak__li Мощность .......................................................................................... #[span 23.2 Ватт]
+                    li.peak__li Размер #[span.peak__line] #[span 822w x 82h]
+                    li.peak__li Напряжение питания #[span.peak__line]  #[span 110V - 240V]
+                    li.peak__li CRI #[span.peak__line]  #[span 90]
+                    li.peak__li Мощность #[span.peak__line]  #[span 23.2 Ватт]
                 a(href="#!").peak__link Посмотреть все характеристики
                     <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.8789 1.38232V1.38232C8.76359 2.29961 7.07697 3.988 6.1619 6.10427L5.93995 6.61758L5.718 6.10427C4.80293 3.988 3.1163 2.29961 1.00099 1.38232V1.38232" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>

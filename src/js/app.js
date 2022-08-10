@@ -8,8 +8,8 @@ const swiper = new Swiper();
 
 var swiper1 = new Swiper(".mySwiper", {
   modules: [Navigation, Thumbs],
-  spaceBetween: 18,
-  slidesPerView: 4,
+  spaceBetween: 10,
+  slidesPerView: 3,
   direction: 'horizontal',
   loop: true,
   watchSlidesProgress: true,
@@ -18,12 +18,21 @@ var swiper1 = new Swiper(".mySwiper", {
     prevEl: ".peak__button-prev",
   },
   breakpoints:{
-    1200:{
+    576:{
+      spaceBetween: 0,
+      slidesPerView: 3,
       direction: 'horizontal',
-    }, 
+    },
     776:{
       direction: 'vertical',
+      spaceBetween: 18,
+      slidesPerView: 4,
     },
+    1200:{
+      direction: 'horizontal',
+      spaceBetween: 18,
+      slidesPerView: 4,
+    }, 
   },
 });
 var swiper2 = new Swiper(".mySwiper2", {

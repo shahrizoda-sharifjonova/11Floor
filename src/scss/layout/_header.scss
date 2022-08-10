@@ -34,7 +34,7 @@
             transition: 300ms ease;
             opacity: 0;
             visibility: hidden;
-            z-index: 99999;
+            z-index: 1000000000 !important;
         }
         @include media(768){
             width: 100%;
@@ -47,7 +47,8 @@
         }
     }
     &__logo{
-        z-index: 999999999;
+        position: relative; 
+        z-index: 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 !important;
     }
     &__list{
         display: flex;
@@ -95,7 +96,7 @@
         justify-content: flex-end;
         align-items: center;
         position: relative;
-        z-index: 999999999;
+        z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 !important;
         @include media(992){
             display: flex !important; 
         }
