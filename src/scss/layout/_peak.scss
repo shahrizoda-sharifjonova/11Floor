@@ -72,9 +72,10 @@
             margin-left: auto;
             margin-right: auto;
             @include media(1200){
-                height: 495px !important;
-                min-height: 495px !important;
-                max-height: 495px !important;
+                height: 510px !important;
+                min-height: 510px !important;
+                max-height: 510px !important;
+                padding-top: 18px;
                 width: max-content;
                 overflow-y: clip;
                 margin-left: auto;
@@ -92,7 +93,6 @@
             }
             .swiper-slide{
                 width: 100%;
-                z-index: 999999999;
             }
             img{
                 max-width: 105px;
@@ -128,6 +128,10 @@
             flex-direction: column;
             width: 26px;
             height: 100%;
+            position: absolute;
+            top: 0;
+            left: -65px;
+            z-index: -1;
         }
     }
     &__button{
@@ -137,7 +141,8 @@
             position: absolute;
             left: 0;
             @include media(1200){
-                top: 0;
+                position: static;
+                transform: rotate(90deg);
             }
         }
         &-next{
@@ -146,7 +151,8 @@
             position: absolute;
             right: 0;
             @include media(1200){
-                top: 0;
+                position: static;
+                transform: rotate(90deg);
             }
         }
     }

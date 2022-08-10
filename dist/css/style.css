@@ -1580,7 +1580,6 @@
 
 .peak .swiper:nth-of-type(2) .swiper-slide {
   width: 100%;
-  z-index: 999999999;
 }
 
 .peak .swiper:nth-of-type(2) img {
@@ -2303,9 +2302,10 @@ a {
   }
 
   .peak .swiper:nth-of-type(2) {
-    height: 495px !important;
-    min-height: 495px !important;
-    max-height: 495px !important;
+    height: 510px !important;
+    min-height: 510px !important;
+    max-height: 510px !important;
+    padding-top: 18px;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
@@ -2341,14 +2341,24 @@ a {
             flex-direction: column;
     width: 26px;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: -65px;
+    z-index: -1;
   }
 
   .peak__button-prev {
-    top: 0;
+    position: static;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 
   .peak__button-next {
-    top: 0;
+    position: static;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 
   .peak__button {
