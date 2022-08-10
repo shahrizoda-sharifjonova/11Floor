@@ -7,20 +7,30 @@ import Swiper, {Pagination, Navigation, FreeMode, Thumbs } from 'swiper';
 const swiper = new Swiper();
 
 var swiper1 = new Swiper(".mySwiper", {
-  modules: [Thumbs],
-  spaceBetween: 18,
-  slidesPerView: 4,
-  loop: true,
-  watchSlidesProgress: true,
-});
-var swiper2 = new Swiper(".mySwiper2", {
   modules: [Navigation, Thumbs],
   spaceBetween: 18,
+  slidesPerView: 4,
+  direction: 'horizontal',
   loop: true,
+  watchSlidesProgress: true,
   navigation: {
     nextEl: ".peak__button-next",
     prevEl: ".peak__button-prev",
   },
+  breakpoints:{
+    1200:{
+      direction: 'horizontal',
+    }, 
+    776:{
+      direction: 'vertical',
+    },
+  },
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  modules: [Thumbs],
+  spaceBetween: 18,
+  slidesPerView: 1,
+  loop: true,
   thumbs: {
     swiper: swiper1,
   },
@@ -62,16 +72,6 @@ menu.addEventListener('click', (e)=>{
     menu.classList.toggle('active')
 })
 
-// const cursor = document.querySelectorAll('.choice__custom');
-// const choiseItem = document.querySelectorAll('.choice__swiper-slide');
-// choiseItem.forEach(item=>{
-//   item.addEventListener('mousemove', e => {
-//     cursor.forEach(cursor => {
-//       cursor.setAttribute("style", "top: "+(e.clientY)+"px; left: "+(e.clientX)+"px;")
-//     });
-//   })
-// })
-
 const choiseItem = document.querySelectorAll('.choice__swiper-slide');
 choiseItem.forEach(item=>{
   const cursor = item.querySelector('.choice__custom');
@@ -79,5 +79,15 @@ choiseItem.forEach(item=>{
     const y = e.offsetY;
     const x = e.offsetX - cursor.clientWidth; 
     cursor.setAttribute("style", "top: "+(y)+"px; left: "+ (x)+"px;")
+  })
+})
+
+const color = document.querySelectorAll('.peak__color');
+color.forEach(el=>{
+  el.addEventListener('click', (e)=>{
+    color.forEach(peakColor =>{
+      peakColor.classList.remove('active')
+    })
+    el.classList.add('active')
   })
 })
