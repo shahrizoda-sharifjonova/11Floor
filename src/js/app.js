@@ -112,9 +112,17 @@ new Swiper(".choice__swiper", {
   spaceBetween: 20,
   slidesPerView: 1,
   loop: true,
+  modules: [FreeMode, Navigation],
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
+  navigation: {
+    nextEl: ".choice__button-next",
+    prevEl: ".choice__button-prev",
+  },
   breakpoints:{
     992:{
-      modules: [FreeMode],
       slidesPerView: 'auto',
       freeMode: true,
     },
