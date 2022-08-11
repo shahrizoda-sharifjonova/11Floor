@@ -52,7 +52,7 @@ gsap.from('.materials__img_2', {
   start: "center center",
 })
 
-import Swiper, {Pagination, Navigation, FreeMode, Thumbs } from 'swiper';
+import Swiper, {Pagination, Navigation, FreeMode, Thumbs, Autoplay } from 'swiper';
 
 const swiper = new Swiper();
 
@@ -96,12 +96,15 @@ var swiper2 = new Swiper(".mySwiper2", {
 });
 
 new Swiper(".intro__swiper", {
-    modules: [Pagination],
+    modules: [Pagination, Autoplay],
     spaceBetween: 20,
     slidesPerView: 1,
     pagination: {
       el: ".intro__pagination",
       clickable: true,
+    },
+    autoplay: {
+      delay: 3000,
     },
 });
 
