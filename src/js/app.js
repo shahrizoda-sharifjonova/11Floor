@@ -52,6 +52,16 @@ gsap.from('.materials__img_2', {
   start: "center center",
 })
 
+gsap.from('.item__left-img', {
+  scrollTrigger: ".item__left-img",
+  opacity: 0,
+  y: 100,
+  duration: 1,
+  ease: "power2",
+  stagger: .2,
+  start: "center center",
+})
+
 import Swiper, {Pagination, Navigation, FreeMode, Thumbs, Autoplay } from 'swiper';
 
 const swiper = new Swiper();

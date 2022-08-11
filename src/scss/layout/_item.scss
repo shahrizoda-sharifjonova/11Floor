@@ -161,16 +161,16 @@
         transition: 150ms ease;
         top: 0;
         left: calc(100% + 20px);
-        width: 100%;
-        height: 100%;
+        width: 101%;
+        height: 101%;
         @include media(992){
             max-width: 346px;
-            width: 100%;
-            height: 100%;
+            width: 101%;
+            height: 101%;
         }
         @include media(768){
-            max-width: 100%;
-            width: 100%;
+            max-width: 101%;
+            width: 101%;
             position: static;
             display: none;
         }
@@ -180,7 +180,7 @@
                 left: calc(100% + 60px);
             }
             @include media(1200){
-                left: calc(100% + 28px);
+                left: calc(100% + 27px);
             }
         }
         &.second{
@@ -190,7 +190,7 @@
                 right: calc(100% + 60px);
             }
             @include media(1200){
-                right: calc(100% + 28px);
+                right: calc(100% + 27px);
             }
         }
         &-content{
