@@ -3,6 +3,19 @@
     position: absolute;
     z-index: 1;
     width: 100%;
+    &.headerBlack{
+        @include media(992){
+            padding-top: 20px;
+        }
+        .header__nav{
+            &.container{
+                @include media(768){
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
     @include media(992){
         padding-top: 43px;
     }
