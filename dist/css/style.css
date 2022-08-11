@@ -2235,6 +2235,7 @@
           box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 *:focus,
