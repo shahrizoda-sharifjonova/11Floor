@@ -99,6 +99,7 @@ new Swiper(".intro__swiper", {
     modules: [Pagination, Autoplay],
     spaceBetween: 20,
     slidesPerView: 1,
+    loop: true,
     pagination: {
       el: ".intro__pagination",
       clickable: true,
