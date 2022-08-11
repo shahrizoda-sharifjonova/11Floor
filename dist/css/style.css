@@ -257,8 +257,6 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding-right: 23px;
-  padding-left: 23px;
 }
 
 .header__content.active {
@@ -266,9 +264,30 @@
   visibility: visible;
 }
 
+.header__content.active .header__link {
+  color: #000;
+}
+
 .header__logo {
   position: relative;
+  width: 240px;
   z-index: 10000000000000005000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 !important;
+}
+
+.header__logo .logo_black {
+  display: none;
+}
+
+.header__logo.active .logo_white {
+  display: none;
+}
+
+.header__logo.active .logo_black {
+  display: block;
+}
+
+.header__logo img {
+  width: 100%;
 }
 
 .header__list {
@@ -340,7 +359,7 @@
 .header .menu-btn {
   width: 16px;
   height: 2px;
-  background: #000;
+  background: #fff;
   display: block;
   border-radius: 2px;
 }
@@ -351,7 +370,7 @@
   top: 0;
   width: 100%;
   height: 2px;
-  background: #000;
+  background: #fff;
   border-radius: 2px;
   -webkit-transition: 300ms ease;
   -o-transition: 300ms ease;
@@ -365,7 +384,7 @@
   right: 0;
   width: 8px;
   height: 2px;
-  background: #000;
+  background: #fff;
   border-radius: 2px;
   -webkit-transition: 300ms ease;
   -o-transition: 300ms ease;
@@ -382,6 +401,7 @@
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
       -ms-transform: translate(-50%, -50%) rotate(45deg);
           transform: translate(-50%, -50%) rotate(45deg);
+  background: #000;
 }
 
 .header .menu.active::after {
@@ -391,6 +411,7 @@
       -ms-transform: translate(-50%, -50%) rotate(-45deg);
           transform: translate(-50%, -50%) rotate(-45deg);
   width: 100%;
+  background: #000;
 }
 
 .footer {
@@ -2975,10 +2996,6 @@ a {
     width: 160px;
   }
 
-  .header__logo img {
-    width: 100%;
-  }
-
   .header__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3643,6 +3660,11 @@ a {
 @media (max-width: 575px) {
   .header {
     padding-top: 15px;
+  }
+
+  .header__nav.container {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   .footer {

@@ -136,11 +136,13 @@ new Swiper(".choice__swiper", {
 const menu = document.querySelector('.menu');
 const headerContent = document.querySelector('.header__content');
 const body = document.querySelector('body');
+const logo = document.querySelector('.header__logo');
 
 menu.addEventListener('click', (e)=>{
     headerContent.classList.toggle('active')
     body.classList.toggle('hidden')
     menu.classList.toggle('active')
+    logo.classList.toggle('active')
 })
 
 const choiseItem = document.querySelectorAll('.choice__swiper-slide');

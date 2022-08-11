@@ -19,6 +19,10 @@
         &.container{
             padding-right: 30px;
             padding-left: 30px;
+            @include media(575){
+                padding-right: 15px;
+                padding-left: 15px;
+            }
         }
     }
     &__content{
@@ -26,8 +30,6 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        padding-right: 23px;
-        padding-left: 23px;
         @include media(992){
             position: fixed;
             right: 0;
@@ -54,18 +56,31 @@
         &.active{
             opacity: 1;
             visibility: visible;
+            .header__link{
+                color: #000;
+            }
         }
     }
     &__logo{
         position: relative; 
+        width: 240px;
         z-index: 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 !important;
         @include media(992){
             width: 160px;
         }
-        img{
-            @include media(992){
-                width: 100%;
+        .logo_black{
+            display: none;
+        }
+        &.active{
+            .logo_white{
+                display: none;
             }
+            .logo_black{
+                display: block;
+            }
+        }
+        img{
+            width: 100%;
         }
     }
     &__list{
@@ -121,7 +136,7 @@
         &-btn{
             width: 16px;
             height: 2px;
-            background: #000;
+            background: #fff;
             display: block;
             border-radius: 2px;
         }
@@ -131,7 +146,7 @@
             top: 0;
             width: 100%;
             height: 2px;
-            background: #000;
+            background: #fff;
             border-radius: 2px;
             transition: 300ms ease;
         }
@@ -142,7 +157,7 @@
             right: 0;
             width: 8px;
             height: 2px;
-            background: #000;
+            background: #fff;
             border-radius: 2px;
             transition: 300ms ease;
         }
@@ -154,12 +169,14 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%) rotate(45deg);
+                background: #000;
             }
             &::after{
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%) rotate(-45deg);
                 width: 100%;
+                background: #000;
             }
         }
     }
