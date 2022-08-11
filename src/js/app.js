@@ -2,6 +2,56 @@ import * as functions from "./modules/functions.js";
 
 functions.isWebp();
 
+gsap.from('.lamps__left-img', {
+  scrollTrigger: ".lamps__left-img",
+  opacity: 0,
+  y: 200,
+  duration: 1,
+  ease: "power1",
+  stagger: .2,
+  start: "center center",
+})
+
+gsap.from('.products__img_1', {
+  scrollTrigger: ".products__img_1",
+  opacity: 0,
+  y: 200,
+  duration: 1,
+  ease: "power1",
+  stagger: .2,
+  start: "center center",
+})
+
+gsap.from('.products__img_2', {
+  scrollTrigger: ".products__img_2",
+  opacity: 0,
+  y: -200,
+  duration: 1,
+  ease: "power1",
+  stagger: .2,
+  start: "center center",
+})
+
+gsap.from('.materials__img_1', {
+  scrollTrigger: ".materials__img_1",
+  opacity: 0,
+  y:100,
+  duration: 1,
+  ease: "power1",
+  stagger: .2,
+  start: "center center",
+})
+
+gsap.from('.materials__img_2', {
+  scrollTrigger: ".materials__img_2",
+  opacity: 0,
+  y: -100,
+  duration: 1,
+  ease: "power1",
+  stagger: .2,
+  start: "center center",
+})
+
 import Swiper, {Pagination, Navigation, FreeMode, Thumbs } from 'swiper';
 
 const swiper = new Swiper();
@@ -116,12 +166,3 @@ descBtn.forEach(btn=>{
 
 
 
-
-gsap.from('.lamps__left-img', {
-  scrollTrigger: ".lamps__left-img",
-  opacity: 0,
-  y: 200,
-  duration: 1,
-  ease: "back",
-  stagger: .2,
-})
