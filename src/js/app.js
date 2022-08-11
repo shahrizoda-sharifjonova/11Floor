@@ -113,3 +113,15 @@ descBtn.forEach(btn=>{
     document.querySelector(`#${target}`).classList.toggle('active')
   })
 })
+
+
+
+
+gsap.from('.lamps__left-img', {
+  scrollTrigger: ".lamps__left-img",
+  opacity: 0,
+  y: 200,
+  duration: 1,
+  ease: "back",
+  stagger: .2,
+})

@@ -1,3 +1,17 @@
 mixin materials()
     .materials 
-        
+        .materials__body.container 
+            .materials__left 
+                .materials__icon 
+                    img(src="@img/materials-img.png", alt="")
+                h2.materials__subtitle Материалы
+                p.materials__p При создания светильника использованы только натуральные материалы: дерево, алюминий и масло с твердым воском.  Сделано с заботой о природе, безопасно для аллергиков
+            .materials__right 
+                .materials__img.materials__img_1 
+                    img(src="@img/materials-img-1.png", alt="").disable-xl
+                    img(src="@img/materials-img-1-xl.png", alt="").enable-xl.disable-sm
+                    img(src="@img/materials-img-1-lg.png", alt="").enable-sm
+                .materials__img.materials__img_2 
+                    img(src="@img/materials-img-2.png", alt="").disable-xl
+                    img(src="@img/materials-img-2-xl.png", alt="").enable-xl.disable-sm
+                    img(src="@img/materials-img-2-lg.png", alt="").enable-sm
