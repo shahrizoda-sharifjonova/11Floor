@@ -327,6 +327,14 @@
   transition: color, text-decoration-line 300ms ease, -webkit-text-decoration-line 300ms ease;
 }
 
+.header__link.black {
+  color: #000;
+}
+
+.header__link.black svg path {
+  fill: #000;
+}
+
 .header__link svg path {
   fill: #fff;
 }
@@ -334,7 +342,6 @@
 .header__link:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  color: #fff;
   font-weight: 600;
 }
 
@@ -354,6 +361,18 @@
           align-items: center;
   position: relative;
   z-index: 100000000000000050000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 !important;
+}
+
+.header .menu.black .menu-btn {
+  background: #000;
+}
+
+.header .menu.black::before {
+  background: #000;
+}
+
+.header .menu.black::after {
+  background: #000;
 }
 
 .header .menu-btn {
@@ -1593,12 +1612,10 @@
 
 .peak .swiper {
   width: 100%;
-  z-index: 999999999;
 }
 
 .peak .swiper.mySwiper2 {
   margin-bottom: 16px;
-  z-index: 999999999;
 }
 
 .peak .swiper:nth-of-type(2) {

@@ -62,7 +62,6 @@
     }
     .swiper{
         width: 100%;
-        z-index: 999999999;
         @include media(1200){
             height: 100%;
         }
@@ -74,7 +73,6 @@
         }
         &.mySwiper2{
             margin-bottom: 16px;
-            z-index: 999999999;
             @include media(1200){
                 max-width: 613px;
                 width: 100%;

@@ -108,6 +108,14 @@
         letter-spacing: -0.02em;
         color: #fff;
         transition: color, text-decoration-line 300ms ease;
+        &.black{
+            color: #000;
+            svg{
+                path{
+                    fill: #000;
+                }
+            }
+        }
         svg{
             path{
                 fill: #fff;
@@ -115,7 +123,6 @@
         }
         &:hover{
             text-decoration-line: underline;
-            color: #fff;
             font-weight: 600;
         }
         &:active{
@@ -132,6 +139,17 @@
         z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 !important;
         @include media(992){
             display: flex !important; 
+        }
+        &.black{
+            .menu-btn{
+                background: #000;
+            }
+            &::before{
+                background: #000;
+            }
+            &::after{
+                background: #000;
+            }
         }
         &-btn{
             width: 16px;
