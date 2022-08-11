@@ -10,7 +10,6 @@
         height: calc(100vh - 46px);
     }
     @include media(425){
-        max-height: calc(100vh - 46px);
         height: max-content;
     }
     &__body{

@@ -4048,7 +4048,6 @@ a {
 
 @media (max-width: 425px) {
   .intro {
-    max-height: calc(100vh - 46px);
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
