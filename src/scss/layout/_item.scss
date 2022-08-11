@@ -1,4 +1,4 @@
-.lamps{
+.item{
     padding-top: 130px;
     padding-bottom: 115px;
     @include media(1200){
@@ -97,7 +97,7 @@
         }
         &:hover{
             background: #F5F2F5;
-            .lamps__right{
+            .item__right{
                 opacity: 1;
                 visibility: visible;
                 background: #F5F2F5;
@@ -129,10 +129,10 @@
                 line-height: 0;
             }
         }
-        .lamps__content{
+        .item__content{
             position: absolute;
-            bottom: 30px;
-            left: 47px;
+            bottom: 55px;
+            left: 40px;
             @include media(1200){
                 bottom: 23px;
                 left: 35px;
@@ -149,6 +149,8 @@
         line-height: 107.3%;
         color: #FFFFFF;
         margin-bottom: 15px;
+        max-width: 275px;
+        width: 100%;
         @include media(1200){
             font-weight: 400;
             font-size: 35.9049px;
