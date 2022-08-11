@@ -6,13 +6,16 @@
     @include media(768){
         padding-top: 20px;
     }
+    @include media(576){
+        padding-top: 0;
+    }
     @include media(425){
         height: max-content;
     }
     &__body{
         height: 100%;
         &.container{
-            @include media(575){
+            @include media(576){
                 padding-right: 0;
                 padding-left: 0;
             }
