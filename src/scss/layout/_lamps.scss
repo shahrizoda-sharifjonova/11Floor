@@ -87,6 +87,7 @@
         column-gap: 95px;
         transition: 150ms ease;
         width: calc(50% - 14px);
+        position: relative;
         @include media(768){
             width: 100%;
             column-gap: 0;
@@ -203,12 +204,14 @@
         opacity: 0;
         visibility: hidden;
         transition: 150ms ease;
-        top: 140px;
+        top: 0;
+        left: calc(100% + 20px);
+        width: 100%;
+        height: 100%;
         @include media(992){
             max-width: 346px;
             width: 100%;
             height: 100%;
-            top: 182px;
         }
         @include media(768){
             max-width: 100%;
@@ -216,16 +219,23 @@
             position: static;
             display: none;
         }
-        &.first{
-            right: 153px;
+        &.first{ 
+            left: calc(100% + 28px);
             @include media(1400){
-                right: 0;
+                left: calc(100% + 60px);
+            }
+            @include media(1200){
+                left: calc(100% + 28px);
             }
         }
         &.second{
-            left: 153px;
+            right: calc(100% + 28px);
+            left: auto;
             @include media(1400){
-                left: 0;
+                right: calc(100% + 60px);
+            }
+            @include media(1200){
+                right: calc(100% + 28px);
             }
         }
         &-content{
