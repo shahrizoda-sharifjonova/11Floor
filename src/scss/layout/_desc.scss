@@ -1,0 +1,311 @@
+.desc{
+    padding-bottom: 280px;
+    @include media(1400){
+        padding-bottom: 150px;
+    }
+    @include media(768){
+        padding-bottom: 100px;
+    }
+    @include media(575){
+        padding-bottom: 70px;
+    }
+    &__body{
+        padding-left: 133px;
+        @include media(1400){
+            padding-left: 15px;
+        }
+    }
+    &__title{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48.2px;
+        line-height: 107.3%;
+        margin-bottom: 41px;
+        @include media(575){
+            margin-bottom: 36px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 107.3%;
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    &__col{
+        @include media(1200){
+            display: none;
+        }
+        &_right{
+            transform: translateX(-100px);
+        }
+    }
+    &__item{
+        background: #FBF9FB;
+        border-radius: 13px;
+        position: relative;
+        padding: 16px 35px 30px 16px;
+        @include media(1200){
+            max-width: 600px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: none !important;
+        }
+        &.hidden-xl{
+            @include media(1200){
+                display: none;
+            }
+        }
+        &.visible-xl{
+            display: none;
+            @include media(1200){
+                display: block;
+            }
+        }
+        &.active{
+            @include media(1200){
+                display: block !important;
+            }
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            z-index: 1; 
+        }
+        &.orange{
+            background: #CC9A5F;
+        }
+        &_1{
+            padding: 10px 5px 24px 24px;
+            border-radius: 13px 13px 0 13px;
+            margin-left: 20px;
+            margin-bottom: 40px;
+            @include media(1400){
+                padding: 15px 20px 32px 15px;
+                margin-bottom: 55px;
+                min-width: 290px;
+            } 
+            &::before{
+                background: url(../img/arrow-1.png) right / cover no-repeat;
+                width: 106px;
+                height: 82px;
+                bottom: -11px;
+                right: -106px;
+            }
+        }
+        &_2{
+            padding: 20px 43px 40px 20px;
+            margin-bottom: 46px;
+            border-radius: 13px 0 13px 13px;
+            max-width: 322px;
+            width: 100%;
+            @include media(1400){
+                max-width: 260px;
+                padding: 16px 35px 32px 16px;
+                margin-bottom: 145px;
+            }
+            &::before{
+                background: url(../img/arrow-2.png) right / cover no-repeat;
+                width: 75px;
+                height: 326px;
+                right: -75px;
+                top: 0;
+            }
+        }
+        &_3{
+            padding: 27px 23px 10px 35px;
+            border-radius: 13px 13px 0 13px;
+            @include media(1400){
+                max-width: 370px;
+                width: 100%;
+                padding: 16px 60px 32px 16px;
+            }
+            &::before{
+                background: url(../img/arrow-3.png) right / cover no-repeat;
+                width: 233px;
+                height: 292px;
+                right: -233px;
+                bottom: 0;
+                @include media(1400){
+                    right: -155px;
+                }
+            }
+        }
+        &_4{
+            padding: 21px 43px 40px 20px;
+            border-radius: 0 13px 13px 13px;
+            margin-bottom: 45px;
+            transform: translateX(-145px);
+            @include media(1400){
+                min-width: 300px;
+                transform: translateX(-145px) translateY(-55px);
+                margin-bottom: 95px;
+                padding: 16px 35px 32px 16px;
+            }
+            &::before{
+                background: url(../img/arrow-4.png) left / cover no-repeat;
+                width: 145px;
+                height: 136px;
+                top: 0;
+                left: -145px;
+            }
+        }
+        &_5{
+            padding: 20px 43px 40px 20px;
+            margin-bottom: 40px;
+            border-radius: 0 13px 13px 13px;
+            @include media(1400){
+                padding: 16px 35px 32px 16px;
+                margin-bottom: 130px;
+            }
+            &::before{
+                background: url(../img/arrow-5.png) left / cover no-repeat;
+                width: 94px;
+                height: 79px;
+                left: -94px;
+                top: 0;
+            }
+        }
+        &_6{
+            padding: 20px 37px 40px 20px;
+            border-radius: 0 13px 13px 13px;
+            transform: translateX(-100px);
+            &::before{
+                background: url(../img/arrow-6.png) top / cover no-repeat;
+                width: 63px;
+                height: 167px;
+                top: -167px;
+                left: -63px;
+            }
+        }
+    }
+    &__subtitle{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 23px;
+        color: #FFFFFF;
+        margin-bottom: 7px;
+        @include media(1400){
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 18px;
+            margin-bottom: 8px;
+        }
+        @include media(1200){
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 23px;
+            color: #FFFFFF;
+            margin-bottom: 7px;
+            text-align: center;
+        }
+        @include media(575){
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        &.black{
+            color: #000;
+        }
+    }
+    &__p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+        color: rgba(255, 255, 255, 0.8);
+        @include media(1400){
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 18px;
+        }
+        @include media(1200){
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 23px;
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+        }
+        @include media(575){
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: left;
+        }
+        &.mt10{
+            margin-top: 10px;
+        }
+        &.mt20{
+            margin-top: 20px;
+            @include media(1400){
+                margin-top: 15px;
+            }
+            @include media(1200){
+                margin-top: 20px;
+            }
+            @include media(575){
+                margin-top: 15px;
+            }
+        }
+        &.black{
+            color: #000;
+        }
+    }
+    &__img{
+        position: relative !important;
+    }
+    &__center{
+        padding-top: 54px;
+        transform: translateX(-100px);
+        width: calc(100% - 100px);
+        @include media(1400){
+            padding-top: 0;
+        }
+        @include media(1200){
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            transform: translateX(0);
+            margin-bottom: 12px;
+        }
+    }
+    &__btn{
+        position: absolute;
+        background: #FBF9FB;
+        filter: drop-shadow(0px 2.05724px 11.3148px rgba(0, 0, 0, 0.7));
+        border-radius: 50%;
+        width: 13px;
+        height: 13px;
+        display: none;
+        @include media(1200){
+            display: block; 
+        }
+        &_1{
+            top: 66px;
+            left: 95px;
+        }
+        &_2{
+            top: 30px;
+            left: 150px;
+        }
+        &_3{
+            bottom: 37px;
+            left: 43px;
+        }
+        &_4{
+            bottom: 37px;
+            left: 100px;
+        }
+        &_5{
+            bottom: 65px;
+            right: 81px;
+        }
+        &_6{
+            bottom: 90px;
+            right: 35px;
+        }
+    }
+}

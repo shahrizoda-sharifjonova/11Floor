@@ -532,6 +532,7 @@
         line-height: 107.3%;
         color: #FFFFFF;
         margin-top: 65px;
+        transition: 500ms ease;
         @include media(1200){
             display: flex;
         }
@@ -542,6 +543,12 @@
             padding: 8px 24px;
             column-gap: 8px;
             margin-top: 28px;
+        }
+        &:hover{
+            background: linear-gradient(273.32deg, #CC9A5F 6.6%, #DBB180 101.24%);
+        }
+        &:active{
+            background: #A97D49;
         }
         svg{
             @include media(768){

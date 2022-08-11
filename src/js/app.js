@@ -100,3 +100,16 @@ color.forEach(el=>{
     el.classList.add('active')
   })
 })
+
+const descBtn = document.querySelectorAll('.desc__btn');
+const descItem = document.querySelectorAll('.desc__item');
+
+descBtn.forEach(btn=>{
+  btn.addEventListener('click', (e)=>{
+    descItem.forEach(item=>{
+      item.classList.remove('active')
+    })
+    const target = e.target.getAttribute("data-target")
+    document.querySelector(`#${target}`).classList.toggle('active')
+  })
+})

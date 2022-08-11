@@ -1,0 +1,64 @@
+mixin desc()
+    .desc 
+        .desc__body.container 
+            h2.desc__title Описание
+            .desc__content  
+                .desc__col.desc__col_left 
+                    .desc__item.hidden-xl.desc__item_1.orange     
+                        h2.desc__subtitle Крепеж 
+                        p.desc__p.disable-xxl Специально разработанный крепеж упрощает монтаж. Быстро и правильно установить лампу получится даже у того, кто вешает светильник в первый раз
+                        p.desc__p.mt10.disable-xxl Подвесной светильник можно установить на потолочную планку или на трек-систему
+                        p.desc__p.mt10.enable-xxl OPAL 063 распределяет свет без бликов, делая его безопасным и комфортным для глаз.
+                    .desc__item.hidden-xl.desc__item_2     
+                        h2.desc__subtitle.black Деревянная часть
+                        p.desc__p.black.mt20 светильника сформована и стабилизирована в вакуумном прессе, поэтому — деформация от нагревания или влаги исключена.
+                        p.desc__p.black.mt20 Деревянная часть защищена масловоском Osmo от нагревания и влаги. Светильник не изменит цвет и форму со временем, его легко очищвть 
+                    .desc__item.hidden-xl.desc__item_3.orange     
+                        h2.desc__subtitle Рассеиватель из немецкого оргстекла
+                        p.desc__p OPAL 063 распределяет свет без бликов, делая его безопасным и комфортным для глаз.
+                .desc__center
+                    .desc__img
+                        img(src="@img/desc-img.png", alt="").disable-xl
+                        img(src="@img/desc-img-xl.png", alt="").enable-xl
+                        button(type="button" data-target="descItem1").desc__btn.desc__btn_1 
+                        button(type="button" data-target="descItem2").desc__btn.desc__btn_2 
+                        button(type="button" data-target="descItem3").desc__btn.desc__btn_3 
+                        button(type="button" data-target="descItem4").desc__btn.desc__btn_4 
+                        button(type="button" data-target="descItem5").desc__btn.desc__btn_5 
+                        button(type="button" data-target="descItem6").desc__btn.desc__btn_6 
+                .desc__col.desc__col_right  
+                    .desc__item.hidden-xl.desc__item_4
+                        h2.desc__subtitle.black Алюминиевый профиль 
+                        p.desc__p.black.mt20 с естественным обдувом исключает перегрев светодиодного модуля, продлевая срок его службы до 50 000 часов.    
+                        p.desc__p.black.mt20 Алюминиевый профиль покрыт матовой краской: она устраняет световые блики, светильник смотрится «дороже»
+                    .desc__item.hidden-xl.desc__item_5.orange
+                        h2.desc__subtitle Cветодиодные модули Samsung
+                        p.desc__p Мы используем светодиодные модули Samsung: энергоэффективные, одинаковые по цветовой температуре и яркости.
+                    .desc__item.hidden-xl.desc__item_6
+                        h2.desc__subtitle.black Блок питания
+                        p.desc__p.black.mt20 Надежный блок питания с широким диапазоном входных напряжений 110–240 В.
+                        p.desc__p.black.mt20 Бстроенный блок у питания позволяет быстро и без дополнительных затрат инсталлировать светильник
+            .desc__item.visible-xl#descItem1
+                h2.desc__subtitle.black Рассеиватель из немецкого оргстекла
+                p.desc__p.black Специально разработанный крепеж упрощает монтаж. Быстро и правильно установить лампу получится даже у того, кто вешает светильник в первый раз
+                p.desc__p.mt20.black Подвесной светильник можно установить на потолочную планку или на трек-систему
+            .desc__item.visible-xl#descItem2.active
+                h2.desc__subtitle.black Алюминиевый профиль 
+                p.desc__p.black с естественным обдувом исключает перегрев светодиодного модуля, продлевая срок его службы до 50 000 часов.
+                p.desc__p.mt20.black Алюминиевый профиль покрыт матовой краской: она устраняет световые блики, светильник смотрится «дороже»
+            .desc__item.visible-xl#descItem3
+                h2.desc__subtitle.black Деревянная часть
+                p.desc__p.black светильника сформована и стабилизирована в вакуумном прессе, поэтому — деформация от нагревания или влаги исключена.
+                p.desc__p.mt20.black Деревянная часть защищена масловоском Osmo от нагревания и влаги. Светильник не изменит цвет и форму со временем, его легко очищвть 
+            .desc__item.visible-xl#descItem4
+                h2.desc__subtitle.black Крепеж 
+                p.desc__p.black Специально разработанный крепеж упрощает монтаж. Быстро и правильно установить лампу получится даже у того, кто вешает светильник в первый раз
+                p.desc__p.mt20.black Подвесной светильник можно установить на потолочную планку или на трек-систему
+            .desc__item.visible-xl#descItem5
+                h2.desc__subtitle.black Блок питания 
+                p.desc__p.black Надежный блок питания с широким диапазоном входных напряжений 110–240 В.
+                p.desc__p.mt20.black Бстроенный блок у питания позволяет быстро и без дополнительных затрат инсталлировать светильник
+            .desc__item.visible-xl#descItem6
+                h2.desc__subtitle.black Cветодиодные модули Samsung
+                p.desc__p.black Мы используем светодиодные модули Samsung: энергоэффективные, одинаковые по цветовой температуре и яркости.
+                
