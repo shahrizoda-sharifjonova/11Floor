@@ -6,9 +6,6 @@
     @include media(768){
         padding-top: 20px;
     }
-    @include media(575){
-        height: calc(100vh - 46px);
-    }
     @include media(425){
         height: max-content;
     }
