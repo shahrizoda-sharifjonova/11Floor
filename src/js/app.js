@@ -188,5 +188,25 @@ descBtn.forEach(btn=>{
   })
 })
 
+const lampsDesc = document.querySelectorAll('.lamps__desc');
+const lampsBottom = document.querySelectorAll('.lamps__bottom');
+const lamps = document.querySelector('.lamps');
+
+lampsBottom.forEach(bottom => {
+  bottom.addEventListener('mouseenter', (e)=>{
+    bottom.classList.toggle('active')
+    lamps.classList.toggle('active')
+    lampsDesc.forEach(desc=>{
+      desc.classList.toggle('active')
+    })
+  })
+  bottom.addEventListener('mouseleave', (e)=>{
+    bottom.classList.remove('active')
+    lamps.classList.remove('active')
+    lampsDesc.forEach(desc=>{
+      desc.classList.remove('active')
+    })
+  })
+});
 
 
